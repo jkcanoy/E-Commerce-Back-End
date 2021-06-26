@@ -10,13 +10,8 @@ router.get('/', (req, res) => {
   try {
     const productData = await Product.findAll({
       include: [
-      { model: Category,
-        attributes: ['category_name']
-      },
-      {
-        model: Tag,
-        attributes: ['tag_name']
-      }
+      { model: Category },
+      { model: Tag }
     ]
     });
     res.status(200).json(productData);
@@ -33,14 +28,8 @@ router.get('/:id', (req, res) => {
     const productData = await Product.findbyPK(
       req.params.id, {
         include: [
-          {
-            model: Category,
-            attributes: ['category_name']
-          },
-          {
-            model: Tag,
-            attributes: ['tag_name']
-          }
+          { model: Category },
+          { model: Tag }
         ]
       }
     );
