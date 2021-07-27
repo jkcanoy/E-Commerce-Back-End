@@ -59,4 +59,4 @@ This application is covered by MIT License. For more information please refer to
 
 - GitHub: [jkcanoy](https://github.com/jkcanoy).
 
-- For more information please contact kylecanoy96@gma
+- For more information please contact kylecanoy96@gmail.com
